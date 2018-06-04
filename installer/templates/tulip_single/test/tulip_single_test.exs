@@ -1,8 +1,8 @@
-defmodule <%= @project_name %>Test do
+defmodule <%= module_name %>Test do
   use ExUnit.Case
-  doctest <%= @project_name %>
+  doctest <%= module_name %>
 
   test "greets the world" do
-    assert <%= @project_name %>.hello() == :world
+    assert <%= module_name %>.hello() == :world
   end
 end
