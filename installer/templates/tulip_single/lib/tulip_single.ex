@@ -3,16 +3,11 @@ defmodule <%= module_name %> do
   Documentation for <%= module_name %>.
   """
 
-  @doc """
-  Hello world.
+  def set(num, options) do
+    ExW3.Contract.send(SimpleStorage, :set [num], options)
+  end
 
-  ## Examples
-
-      iex> <%= module_name %>.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def get() do
+    ExW3.Contract.call(SimpleStorage, :get)
   end
 end

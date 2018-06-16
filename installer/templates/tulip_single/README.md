@@ -1,6 +1,16 @@
 # <%= module_name %>
 
-**TODO: Add description**
+This is a super duper Dapp!
+
+To compile the smart contracts run `mix tulip.solc`
+
+Then you will need to deploy them with `mix tulip.deploy`
+
+*NOTE* before you can successfully deploy your contracts ensure there is an ethereum node you can connect to. An easy way to get started is with `ganache-cli`. You can install it with `npm install -g ganache-cli`, then in a separate tab run `ganache-cli`. If you have a node running on a different port, simply update the `config.exs` file with the proper port number.
+
+Once the above steps are complete you can make sure everything is working with
+`mix test`
+
 
 ## Installation
 
